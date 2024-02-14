@@ -34,12 +34,20 @@ export default function Navbar() {
               <HiBars3 className="h-6 w-6" />
             </button>
           )}
-          {isAboveMediumScreens && isMenuToggled && (
-            <div className="right-0 bottom-0 h-full p-5 z-40 w-[200px] bg-red-300">
+          {!isAboveMediumScreens && isMenuToggled && (
+            <div className="right-0 bottom-0 h-full fixed p-5 z-40 w-[300px] bg-red-300">
               <div className="p-4 flex justify-end">
-                <HiOutlineX className="h-6 w-6" />
+                <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                  <HiOutlineX className="h-6 w-6" />
+                </button>
               </div>
-              <div className="flex flex-col gap-10 justify-center text-2xl"></div>
+              <div className="flex flex-col gap-10 justify-center items-center text-2xl">
+                <Link href={"/"}>Home</Link>
+                <Link href={"/"}>Menu</Link>
+                <Link href={"/"}>Activities</Link>
+                <Link href={"/"}>Contact Us</Link>
+                <Link href={"/"}>Location</Link>
+              </div>
             </div>
           )}
         </div>
