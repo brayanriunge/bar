@@ -4,13 +4,14 @@ import useMediaQuery from "@/hooks/useMediaQuer";
 import { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import Link from "next/link";
+import { HiOutlineX } from "react-icons/hi";
 
 export default function Navbar() {
   const flexStyles = `flex items-center justify-between`;
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (
-    <div className={`${flexStyles} fixed z-30 w-full shadow bg-yellow-300`}>
+    <div className={`${flexStyles} fixed z-30 w-full shadow bg-red-300`}>
       <div className={`${flexStyles} mx-auto w-5/6`}>
         <div className={`${flexStyles} w-full gap-10`}>
           <Image src={Logo} alt="logo" height={40} width={80} />
@@ -32,6 +33,14 @@ export default function Navbar() {
             >
               <HiBars3 className="h-6 w-6" />
             </button>
+          )}
+          {isAboveMediumScreens && isMenuToggled && (
+            <div className="right-0 bottom-0 h-full p-5 z-40 w-[200px] bg-red-300">
+              <div className="p-4 flex justify-end">
+                <HiOutlineX className="h-6 w-6" />
+              </div>
+              <div className="flex flex-col gap-10 justify-center text-2xl"></div>
+            </div>
           )}
         </div>
       </div>
