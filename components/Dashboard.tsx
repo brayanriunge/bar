@@ -1,4 +1,11 @@
+import useMediaQuery from "@/hooks/useMediaQuery";
+import Image from "next/image";
+import Redbull from "@/public/Redbull.jpg";
+import Lucozade from "@/public/Lucozade.jpg";
+import Monster from "@/public/monster.jpg";
+
 export default function Dashboard() {
+  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
   return (
     <section>
       <div className="md:h-full w-full p-4">
@@ -11,14 +18,26 @@ export default function Dashboard() {
         >
           <div className="p-10 m-10">
             <div className="py-5 bg-opacity-0 rounded-2xl">
-              <div className="flex items-center mt-20">
-                <p className="text-3xl text-bold text-center text-white">
+              <div className="flex items-center md:mt-10 mt:p-5">
+                <p className="text-4xl md:font-bold text-center md:text-white">
                   WE ARE READY TO GIVE YOU THE ENTERTAINMENT YOU DESERVE
                 </p>
               </div>
             </div>
           </div>
         </div>
+        {/**sponsors */}
+        {isAboveMediumScreen && (
+          <div className="h-[100px] w-full py-2">
+            <div className="w-5/6 mx-auto">
+              <div className="flex items-center gap-8 w-3/5">
+                <Image src={Redbull} alt="redbull" height={40} width={40} />
+                <Image src={Monster} alt="monster" height={40} width={40} />
+                <Image src={Lucozade} alt="lucozade" height={40} width={40} />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

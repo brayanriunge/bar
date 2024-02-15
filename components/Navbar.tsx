@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "@/public/Logo.png";
-import useMediaQuery from "@/hooks/useMediaQuer";
+import useMediaQuery from "@/hooks/useMediaQuery";
 import { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import Link from "next/link";
