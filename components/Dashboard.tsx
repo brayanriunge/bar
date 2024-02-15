@@ -3,6 +3,7 @@ import Image from "next/image";
 import Redbull from "@/public/Redbull.jpg";
 import Lucozade from "@/public/Lucozade.jpg";
 import Monster from "@/public/monster.jpg";
+import Shark from "@/public/shark.jpg";
 
 export default function Dashboard() {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
@@ -30,10 +31,35 @@ export default function Dashboard() {
         {isAboveMediumScreen && (
           <div className="h-[100px] w-full py-2">
             <div className="w-5/6 mx-auto">
-              <div className="flex items-center gap-8 w-3/5">
-                <Image src={Redbull} alt="redbull" height={40} width={40} />
-                <Image src={Monster} alt="monster" height={40} width={40} />
-                <Image src={Lucozade} alt="lucozade" height={40} width={40} />
+              <div className="flex items-center gap-52 w-3/5">
+                <Image
+                  src={Redbull}
+                  alt="redbull"
+                  height={40}
+                  width={100}
+                  className="rounded-md"
+                />
+                <Image
+                  src={Monster}
+                  alt="monster"
+                  height={40}
+                  width={100}
+                  className="rounded-md"
+                />
+                <Image
+                  src={Lucozade}
+                  alt="lucozade"
+                  height={40}
+                  width={100}
+                  className="rounded-md"
+                />
+                <Image
+                  src={Shark}
+                  alt="shark"
+                  height={40}
+                  width={100}
+                  className="rounded-md"
+                />
               </div>
             </div>
           </div>
