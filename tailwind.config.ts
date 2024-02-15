@@ -7,10 +7,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
-    backgroundImage: () => ({
-      homeimage: "url('/survey.jpeg')",
-    }),
+    extend: {
+      backgroundImage: {
+        homeimage: "url('/dashboard.jpg')",
+      },
+    },
+    // backgroundImage: () => ({
+    //   homeimage": "url('/dashboard.jpg')",
+    // }),
   },
   plugins: [],
 };
