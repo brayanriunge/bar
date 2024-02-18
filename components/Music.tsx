@@ -3,13 +3,13 @@ import DJ from "@/public/dj.jpeg";
 
 export default function Music() {
   return (
-    <div className="gap-16 md:h-full bg-gradient-to-r from-slate-200 to-gray-200pb-12">
+    <div className="gap-16 md:h-full ">
       <div className="md:w-5/6 md:h-5/6 md:flex items-center justify-between gap-8 mx-auto mt-12 ">
-        <div className="z-10 md:basis-3/5 ">
-          <h1 className="text-3xl text-bold text-dark-chocolate">
+        <div className="z-10 md:basis-3/5 p-5 m-2 ">
+          <h1 className="text-3xl font-bold text-dark-chocolate">
             NICE <span className="text-yellow-300 italic">MUSIC</span>
           </h1>
-          <div className="text-md text-bold mt-2">
+          <div className="text-md text-bold mt-2 p-5 m-2">
             Step into our bar and let the rhythm take you on a journey. Our
             vibrant atmosphere pulses with the soulful beats of live music,
             offering an unforgettable experience for music enthusiasts and
@@ -24,7 +24,7 @@ export default function Music() {
             bar. Your next unforgettable night out awaits.
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-2 m-2">
           <Image src={DJ} alt="djing" className="rounded-md" />
         </div>
       </div>
