@@ -1,7 +1,7 @@
 import { MenuType } from "@/hooks/types";
 import Burnt from "@/public/burnt-ends-melt.png";
 import Six from "@/public/six-shooter.png";
-import Bbq from "@/public/bbq-tray_768x535.jpg";
+import Bbq from "@/public/bbq-quesadilla.png";
 import CardMenu from "./CardMenu";
 
 const menus: Array<MenuType> = [
@@ -25,15 +25,17 @@ const menus: Array<MenuType> = [
   },
 ];
 export default function Menu() {
-  <div className="mx-auto md:flex gap-8 mt-4 justify-between ">
-    <div className="mt-5 rounded-md border-2 border-yellow-400 py-16 px-5 text-center">
-      {menus.map((menu: MenuType) => (
-        <CardMenu
-          picture={menu.picture}
-          title={menu.title}
-          description={menu.description}
-        />
-      ))}
-    </div>
-  </div>;
+  return (
+    <section className="mx-auto min-h-full w-5/6 py-10">
+      <div className="md:flex items-center justify-between gap-8 mt-2 p-5 m-5">
+        {menus.map((menu: MenuType) => (
+          <CardMenu
+            picture={menu.picture}
+            title={menu.title}
+            description={menu.description}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
