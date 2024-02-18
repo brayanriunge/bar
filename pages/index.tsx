@@ -1,5 +1,6 @@
 import Dashboard from "@/components/Dashboard";
 import Layout from "@/components/Layout";
+import Menu from "@/components/Menu";
 import Music from "@/components/Music";
 import Navbar from "@/components/Navbar";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Layout>
         <Dashboard />
         <Music />
+        <Menu />
       </Layout>
     </>
   );

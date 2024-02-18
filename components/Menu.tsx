@@ -2,8 +2,9 @@ import { MenuType } from "@/hooks/types";
 import Burnt from "@/public/burnt-ends-melt.png";
 import Six from "@/public/six-shooter.png";
 import Bbq from "@/public/bbq-tray_768x535.jpg";
+import CardMenu from "./CardMenu";
 
-const menu: Array<MenuType> = [
+const menus: Array<MenuType> = [
   {
     picture: Burnt,
     description:
@@ -24,5 +25,15 @@ const menu: Array<MenuType> = [
   },
 ];
 export default function Menu() {
-  <div className="mx-auto "></div>;
+  <div className="mx-auto md:flex gap-8 mt-4 justify-between ">
+    <div className="mt-5 rounded-md border-2 border-yellow-400 py-16 px-5 text-center">
+      {menus.map((menu: MenuType) => (
+        <CardMenu
+          picture={menu.picture}
+          title={menu.title}
+          description={menu.description}
+        />
+      ))}
+    </div>
+  </div>;
 }
