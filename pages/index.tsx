@@ -1,4 +1,5 @@
 import Dashboard from "@/components/Dashboard";
+import Layout from "@/components/Layout";
 import Music from "@/components/Music";
 import Navbar from "@/components/Navbar";
 
@@ -6,8 +7,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Dashboard />
-      <Music />
+      <Layout>
+        <Dashboard />
+        <Music />
+      </Layout>
     </>
   );
 }
