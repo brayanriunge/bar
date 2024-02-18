@@ -11,6 +11,9 @@ const config: Config = {
       backgroundImage: {
         homeimage: "url('/dashboard.jpg')",
       },
+      colors: {
+        "olive-green": "#556B2F",
+      },
     },
     // backgroundImage: () => ({
     //   homeimage": "url('/dashboard.jpg')",
