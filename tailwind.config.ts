@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         "olive-green": "#556B2F",
+        "dark-chocolate": "#3E2723",
       },
     },
     // backgroundImage: () => ({

@@ -3,10 +3,10 @@ import DJ from "@/public/dj.jpeg";
 
 export default function Music() {
   return (
-    <div className="gap-16 md:h-full bg-olive-green pb-12">
-      <div className="md:w-5/6 md:h-5/6 md:flex items-center justify-between gap-8 mx-auto mt-mt-12 ">
+    <div className="gap-16 md:h-full bg-gradient-to-r from-slate-200 to-gray-200pb-12">
+      <div className="md:w-5/6 md:h-5/6 md:flex items-center justify-between gap-8 mx-auto mt-12 ">
         <div className="z-10 md:basis-3/5 ">
-          <h1 className="text-3xl text-bold">
+          <h1 className="text-3xl text-bold text-dark-chocolate">
             NICE <span className="text-yellow-300 italic">MUSIC</span>
           </h1>
           <div className="text-md text-bold mt-2">
