@@ -36,8 +36,10 @@ export default function Menu() {
           />
         ))}
       </div>
-      <div className="flex items-center">
-        <button className="bg-yellow-300 m-5 p-5 rounded-md">Our Menus</button>
+      <div className="flex items-center justify-center">
+        <button className="bg-yellow-300 m-5 p-5 rounded-md hover:bg-yellow-600">
+          Our Menus
+        </button>
       </div>
     </section>
   );
