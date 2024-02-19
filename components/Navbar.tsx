@@ -5,8 +5,10 @@ import { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import Link from "next/link";
 import { HiOutlineX } from "react-icons/hi";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+  const router = useRouter();
   const flexStyles = `flex items-center justify-between`;
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
@@ -20,9 +22,29 @@ export default function Navbar() {
           </h1>
           {isAboveMediumScreens ? (
             <div className={`${flexStyles} w-full `}>
-              <div className={`${flexStyles} gap-20 text-gray-600`}>
-                <Link href={"/"}>Home</Link>
-                <Link href={"/"}>Menu</Link>
+              <div className={`${flexStyles} gap-20`}>
+                <Link legacyBehavior href={"/"}>
+                  <a
+                    className={`${
+                      router.pathname === "/"
+                        ? "text-gray-600"
+                        : "text-orange-800"
+                    } hover:text-orange-500`}
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link legacyBehavior href="/#menu">
+                  <a
+                    className={`${
+                      router.pathname === "/#menu"
+                        ? "text-orange-800"
+                        : "text-gray-600"
+                    } hover:text-orange-500`}
+                  >
+                    Menu
+                  </a>
+                </Link>
                 <Link href={"/"}>Activities</Link>
                 <Link href={"/"}>Contact Us</Link>
                 <Link href={"/"}>Location</Link>

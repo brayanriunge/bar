@@ -29,7 +29,7 @@ const menus: Array<MenuType> = [
 ];
 export default function Menu() {
   return (
-    <section className="mx-auto min-h-full w-5/6 py-10">
+    <section className="mx-auto min-h-full w-5/6 py-10" id="menu">
       <div className="md:flex items-center justify-between gap-8 mt-2 p-5 m-5">
         {menus.map((menu: MenuType, index) => (
           <CardMenu
