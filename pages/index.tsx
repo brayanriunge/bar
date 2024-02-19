@@ -1,4 +1,5 @@
 import Dashboard from "@/components/Dashboard";
+import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
 import Menu from "@/components/Menu";
 import Music from "@/components/Music";
@@ -12,6 +13,7 @@ export default function Home() {
         <Dashboard />
         <Music />
         <Menu />
+        <Footer />
       </Layout>
     </>
   );
