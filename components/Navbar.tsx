@@ -46,7 +46,17 @@ export default function Navbar() {
                   </a>
                 </Link>
                 <Link href={"/"}>Activities</Link>
-                <Link href={"/"}>Contact Us</Link>
+                <Link legacyBehavior href="/#contact">
+                  <a
+                    className={`${
+                      router.pathname === "/#menu"
+                        ? "text-orange-800"
+                        : "text-gray-600"
+                    } hover:text-orange-500`}
+                  >
+                    Contact Us
+                  </a>{" "}
+                </Link>
                 <Link href={"/"}>Location</Link>
               </div>
             </div>
@@ -66,10 +76,40 @@ export default function Navbar() {
                 </button>
               </div>
               <div className="flex flex-col gap-10 justify-center items-center text-2xl text-gray-600 font-bold">
-                <Link href={"/"}>Home</Link>
-                <Link href={"/"}>Menu</Link>
+                <Link legacyBehavior href={"/"}>
+                  <a
+                    className={`${
+                      router.pathname === "/"
+                        ? "text-gray-600"
+                        : "text-orange-800"
+                    } hover:text-orange-500`}
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link legacyBehavior href="/#menu">
+                  <a
+                    className={`${
+                      router.pathname === "/#menu"
+                        ? "text-orange-800"
+                        : "text-gray-600"
+                    } hover:text-orange-500`}
+                  >
+                    Menu
+                  </a>
+                </Link>
                 <Link href={"/"}>Activities</Link>
-                <Link href={"/"}>Contact Us</Link>
+                <Link legacyBehavior href="/#contact">
+                  <a
+                    className={`${
+                      router.pathname === "/#menu"
+                        ? "text-orange-800"
+                        : "text-gray-600"
+                    } hover:text-orange-500`}
+                  >
+                    Contact Us
+                  </a>{" "}
+                </Link>
                 <Link href={"/"}>Location</Link>
               </div>
             </div>
