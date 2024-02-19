@@ -14,13 +14,13 @@ const menus: Array<MenuType> = [
   {
     picture: Six,
     description:
-      "Baked cheese grits piled high with pulled pork, Southern Coleslaw, pickles, jalapeños and 4R Signature Sauce.",
+      "Baked cheese grits piled high with pulled pork&apos; Southern Coleslaw&apos; pickles&apos; jalapeños and 4R Signature Sauce.",
     title: "SIX SHOOTER",
   },
   {
     picture: Bbq,
     description:
-      "Your choice of meat, cheddar cheese and 4R Signature Sauce on a tortilla and grilled to perfection.",
+      "Your choice of meat&apos; cheddar cheese and 4R Signature Sauce on a tortilla and grilled to perfection.",
     title: "BBQ QUESADILLA",
   },
 ];
