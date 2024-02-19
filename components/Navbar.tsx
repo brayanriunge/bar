@@ -49,7 +49,7 @@ export default function Navbar() {
                 <Link legacyBehavior href="/#contact">
                   <a
                     className={`${
-                      router.pathname === "/#menu"
+                      router.pathname === "/#contact"
                         ? "text-orange-800"
                         : "text-gray-600"
                     } hover:text-orange-500`}
@@ -102,7 +102,7 @@ export default function Navbar() {
                 <Link legacyBehavior href="/#contact">
                   <a
                     className={`${
-                      router.pathname === "/#menu"
+                      router.pathname === "/#contact"
                         ? "text-orange-800"
                         : "text-gray-600"
                     } hover:text-orange-500`}

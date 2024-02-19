@@ -17,7 +17,7 @@ export default function ContactUs() {
     }
   };
   return (
-    <section className="mx-auto w-5/6 pt-8 pb-10" id="contactus">
+    <section className="mx-auto w-5/6 pt-8 pb-10" id="contact">
       <div className=" basis-3/5 font-montserrat text-3xl font-bold md: w-3/5">
         <h1 className="text-orange-800">
           Contact Us <span className="text-gray-20"> FOR MORE ASSISTANCE</span>
