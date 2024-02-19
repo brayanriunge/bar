@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import Image from "next/image";
-import Contact from "@/public/ContactUs.jpeg";
+import Contact from "@/public/Contact.jpeg";
 
 export default function ContactUs() {
   const inputStyles = `mb-5 w-full rounded-lg bg-secondary-300 px-5 py-3 placeholder-black`;
