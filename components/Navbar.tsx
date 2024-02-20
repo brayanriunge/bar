@@ -92,7 +92,7 @@ export default function Navbar() {
                     className={`${
                       router.pathname === "/#menu"
                         ? "text-orange-800"
-                        : "text-gray-600"
+                        : "text-gray-700"
                     } hover:text-orange-500`}
                   >
                     Menu
