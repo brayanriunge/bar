@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <div className={`${flexStyles} fixed z-30 w-full shadow bg-slate-100`}>
       <div className={`${flexStyles} mx-auto w-5/6`}>
-        <div className={`${flexStyles} w-full gap-10`}>
+        <div className={`${flexStyles} w-full gap-8`}>
           <Image src={Logo} alt="logo" height={40} width={80} />
           <h1 className="text-2xl font-semibold text-gray-600 flex gap-4">
             Jambo <span> Lounge</span>
