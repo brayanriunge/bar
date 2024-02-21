@@ -22,7 +22,7 @@ export default function Navbar() {
           </h1>
           {isAboveMediumScreens ? (
             <div className={`${flexStyles} w-full `}>
-              <div className={`${flexStyles} gap-20`}>
+              <div className={`${flexStyles} md:gap-20`}>
                 <Link
                   href={"/"}
                   className={`${
