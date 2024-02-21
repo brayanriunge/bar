@@ -20,7 +20,7 @@ export default function Dashboard() {
           <div className="p-10 m-10">
             <div className="py-5 bg-opacity-0 rounded-2xl">
               <div className="flex items-center md:mt-10 mt:p-5">
-                <p className="md:text-4xl sm:text-2xl font-bold text-center md:text-white">
+                <p className="md:text-4xl text-2xl font-bold text-center md:text-white">
                   WE ARE READY TO GIVE YOU THE ENTERTAINMENT YOU DESERVE
                 </p>
               </div>
