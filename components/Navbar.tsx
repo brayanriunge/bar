@@ -23,41 +23,56 @@ export default function Navbar() {
           {isAboveMediumScreens ? (
             <div className={`${flexStyles} w-full `}>
               <div className={`${flexStyles} gap-20`}>
-                <Link legacyBehavior href={"/"}>
-                  <a
-                    className={`${
-                      router.pathname === "/"
-                        ? "text-gray-600"
-                        : "text-orange-800"
-                    } hover:text-orange-500`}
-                  >
-                    Home
-                  </a>
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Home
                 </Link>
-                <Link legacyBehavior href="/#menu">
-                  <a
-                    className={`${
-                      router.pathname === "/#menu"
-                        ? "text-orange-800"
-                        : "text-gray-600"
-                    } hover:text-orange-500`}
-                  >
-                    Menu
-                  </a>
+                <Link
+                  href="/#menu"
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Menu
                 </Link>
-                <Link href={"/"}>Activities</Link>
-                <Link legacyBehavior href="/#contact">
-                  <a
-                    className={`${
-                      router.pathname === "/#contact"
-                        ? "text-orange-800"
-                        : "text-gray-600"
-                    } hover:text-orange-500`}
-                  >
-                    Contact Us
-                  </a>{" "}
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Activities
                 </Link>
-                <Link href={"/"}>Location</Link>
+                <Link
+                  href="/#contact"
+                  className={`${
+                    router.pathname === "/#contact"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Contact Us
+                </Link>
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Location
+                </Link>
               </div>
             </div>
           ) : (
@@ -76,7 +91,7 @@ export default function Navbar() {
                 </button>
               </div>
               <div className="flex flex-col gap-10 justify-center items-center text-2xl text-gray-600 font-bold">
-                <Link legacyBehavior href={"/"}>
+                <Link href={"/"}>
                   <a
                     className={`${
                       router.pathname === "/"
@@ -87,30 +102,46 @@ export default function Navbar() {
                     Home
                   </a>
                 </Link>
-                <Link legacyBehavior href="/#menu">
-                  <a
-                    className={`${
-                      router.pathname === "/#menu"
-                        ? "text-orange-800"
-                        : "text-gray-700"
-                    } hover:text-orange-500`}
-                  >
-                    Menu
-                  </a>
+                <Link
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                  href="/#menu"
+                >
+                  Menu
                 </Link>
-                <Link href={"/"}>Activities</Link>
-                <Link legacyBehavior href="/#contact">
-                  <a
-                    className={`${
-                      router.pathname === "/#contact"
-                        ? "text-orange-800"
-                        : "text-gray-600"
-                    } hover:text-orange-500`}
-                  >
-                    Contact Us
-                  </a>{" "}
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Activities
                 </Link>
-                <Link href={"/"}>Location</Link>
+                <Link
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                  href="/#contact"
+                >
+                  Contact Us
+                </Link>
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Location
+                </Link>
               </div>
             </div>
           )}
