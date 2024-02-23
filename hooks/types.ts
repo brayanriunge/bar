@@ -6,3 +6,9 @@ export interface MenuType {
   picture: StaticImageData;
   title: string;
 }
+export interface ActivityType {
+  id: number;
+  info: string;
+  picture: StaticImageData;
+  title: string;
+}
