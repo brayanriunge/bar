@@ -42,7 +42,10 @@ export default function Activity() {
       </div>
       <div className="flex items-center justify-between gap-8">
         {activities.map((activity, index) => (
-          <div className="mt-5 mx-auto rounded-md border-2 border-yellow-400 py-16 px-5 text-center items-center">
+          <div
+            className="mt-5 mx-auto rounded-md border-2 border-yellow-400 py-16 px-5 text-center items-center"
+            key={index}
+          >
             <Image
               src={activity.picture}
               alt="picture"

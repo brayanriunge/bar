@@ -44,9 +44,9 @@ export default function Navbar() {
                   Menu
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/#activity"}
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#activity"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
@@ -113,9 +113,9 @@ export default function Navbar() {
                   Menu
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/#activity"}
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#activity"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
