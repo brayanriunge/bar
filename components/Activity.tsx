@@ -40,7 +40,7 @@ export default function Activity() {
           Activities <span className="italic text-yellow-300">To Do</span>
         </h1>
       </div>
-      <div className="flex items-center justify-between gap-8">
+      <div className="md:flex items-center justify-between gap-8">
         {activities.map((activity, index) => (
           <div
             className="mt-5 mx-auto rounded-md border-2 border-yellow-400 py-16 px-5 text-center items-center"
