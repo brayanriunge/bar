@@ -1,3 +1,4 @@
+import Activity from "@/components/Activity";
 import ContactUs from "@/components/Contact";
 import Dashboard from "@/components/Dashboard";
 import Footer from "@/components/Footer";
@@ -14,6 +15,7 @@ export default function Home() {
         <Dashboard />
         <Music />
         <Menu />
+        <Activity />
         <ContactUs />
         <Footer />
       </Layout>
