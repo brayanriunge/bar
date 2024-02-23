@@ -21,7 +21,7 @@ const activities: Array<ActivityType> = [
   {
     id: 2,
     picture: Wine,
-    info: "",
+    info: "Embark on a journey of taste and refinement at Jambo Lounge. Elevate your senses with our exclusive wine tasting events, crafted for discerning palates and aficionados alike.",
     title: "Wine Tasty",
   },
   {
