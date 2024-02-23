@@ -1,7 +1,8 @@
 import { ActivityType } from "@/hooks/types";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Food from "@/public/food.jpg";
 import Wine from "@/public/tasting.jpg";
+import Game from "@/public/game.jpg";
 
 type props = {
   id: number;
@@ -23,6 +24,12 @@ const activities: Array<ActivityType> = [
     info: "",
     title: "Wine Tasty",
   },
+  {
+    id: 3,
+    picture: Game,
+    info: "Get ready to elevate your dining and drinking experience with our exciting Game Night Events, guaranteed to bring fun, laughter, and friendly competition to your evening.",
+    title: "Game Night",
+  },
 ];
 
 export default function Activity() {
@@ -33,7 +40,25 @@ export default function Activity() {
           Activities <span className="italic text-yellow-300">To Do</span>
         </h1>
       </div>
-      <div></div>
+      <div className="flex items-center justify-between gap-8">
+        {activities.map((activity, index) => (
+          <div className="mt-5 mx-auto rounded-md border-2 border-yellow-400 py-16 px-5 text-center items-center">
+            <Image
+              src={activity.picture}
+              alt="picture"
+              height={380}
+              width={400}
+              className="rounded-md content-fill"
+            />
+            <div className="text-3xl font-bold text-gray-700">
+              <h1>{activity.title}</h1>
+            </div>
+            <div className="text-lg text-gray-700">
+              <p>{activity.info}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
