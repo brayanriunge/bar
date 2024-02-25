@@ -6,7 +6,7 @@ type props = {
   info: string;
   title: string;
 };
-export default function ActivityType({ id, info, picture, title }: props) {
+export default function ActivityTypes({ id, info, picture, title }: props) {
   const overlayStyles = `p-5 absolute z-30 flex h-[400px] w-[450px] 
     md:flex-col items-center justify-center whitespace-normal 
      text-center text-white opacity-0 transition 

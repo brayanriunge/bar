@@ -3,6 +3,11 @@ import Image, { StaticImageData } from "next/image";
 import Food from "@/public/food.jpg";
 import Wine from "@/public/tasting.jpg";
 import Game from "@/public/game.jpg";
+import ActivityType from "./ActivityTypes";
+import ActivityType from "./ActivityTypes";
+import ActivityType from "./ActivityTypes";
+import ActivityType from "./ActivityTypes";
+import ActivityTypes from "./ActivityTypes";
 
 type props = {
   id: number;
@@ -40,27 +45,17 @@ export default function Activity() {
           Activities <span className="italic text-yellow-300">To Do</span>
         </h1>
       </div>
-      <div className="md:flex items-center justify-between gap-8">
-        {activities.map((activity, index) => (
-          <div
-            className="mt-5 mx-auto rounded-md border-2 border-yellow-400 py-16 px-5 text-center items-center"
-            key={index}
-          >
-            <Image
-              src={activity.picture}
-              alt="picture"
-              height={380}
-              width={400}
-              className="rounded-md content-fill"
+      <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+        <ul className="w-[2800px] whitespace-nowrap ">
+          {ActivityTypes.map((activity: ActivityType, index: number) => (
+            <ActivityTypes
+              id={index}
+              info={activity.info}
+              title={activity.title}
+              picture={activity.picture}
             />
-            <div className="text-3xl font-bold text-gray-700">
-              <h1>{activity.title}</h1>
-            </div>
-            <div className="text-lg text-gray-700">
-              <p>{activity.info}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </ul>
       </div>
     </section>
   );
