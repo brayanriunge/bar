@@ -3,10 +3,6 @@ import Image, { StaticImageData } from "next/image";
 import Food from "@/public/food.jpg";
 import Wine from "@/public/tasting.jpg";
 import Game from "@/public/game.jpg";
-import ActivityType from "./ActivityTypes";
-import ActivityType from "./ActivityTypes";
-import ActivityType from "./ActivityTypes";
-import ActivityType from "./ActivityTypes";
 import ActivityTypes from "./ActivityTypes";
 
 type props = {
