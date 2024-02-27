@@ -4,6 +4,7 @@ import Redbull from "@/public/Redbull.jpg";
 import Lucozade from "@/public/Lucozade.jpg";
 import Monster from "@/public/monster.jpg";
 import Shark from "@/public/shark.jpg";
+import Head from "next/head";
 
 export default function Dashboard() {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
