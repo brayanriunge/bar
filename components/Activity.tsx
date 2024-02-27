@@ -41,9 +41,9 @@ export default function Activity() {
           Activities <span className="italic text-yellow-300">To Do</span>
         </h1>
       </div>
-      <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+      <div className="mt-10 h-[353px] w-full  overflow-y-hidden">
         <ul className="w-[2800px] whitespace-nowrap ">
-          {ActivityTypes.map((activity: ActivityType, index: number) => (
+          {activities.map((activity: ActivityType, index: number) => (
             <ActivityTypes
               id={index}
               info={activity.info}
