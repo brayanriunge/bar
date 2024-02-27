@@ -12,7 +12,7 @@ export default function ActivityTypes({ id, info, picture, title }: props) {
      text-center text-white opacity-0 transition bg-olive-green
     duration-500 hover:opacity-90`;
   return (
-    <li className="relative mx-3 inline-block h-[450px] w-[450px]">
+    <li className="relative mx-3 inline-block h-[450px] w-[450px]" key={id}>
       <div className={overlayStyles}>
         <p className="text-2xl">{title}</p>
         <p className="mt-5">{info}</p>

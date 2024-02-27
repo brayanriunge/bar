@@ -56,6 +56,7 @@ export default function Activity() {
           {activities.map((activity: ActivityType, index: number) => (
             <ActivityTypes
               id={index}
+              key={index}
               info={activity.info}
               title={activity.title}
               picture={activity.picture}
