@@ -41,16 +41,17 @@ export default function Activity() {
           Activities <span className="italic text-yellow-300">To Do</span>
         </h1>
       </div>
-      <div>
-        <p className="text-lg p-5 m-5 ">
-          We are ready to services you with best activities for your relaxation.
-          <span className="italics text-orange-500 font-extrabold">
+      <div className="w-full basis-3/5">
+        <p className="text-lg p-2 m-2 ">
+          We are ready to services you with best activities for your relaxation.{" "}
+          {""}
+          <span className="italics text-orange-500 font-extrabold text-xl">
             COME JOIN US
           </span>
         </p>
       </div>
 
-      <div className="mt-10 h-[250px] w-full overflow-x-auto overflow-y-hidden">
+      <div className="mt-10 h-[250px] w-full overflow-x-auto overflow-y-hidden ">
         <ul className="w-[100px] whitespace-nowrap ">
           {activities.map((activity: ActivityType, index: number) => (
             <ActivityTypes
