@@ -17,7 +17,7 @@ export default function ActivityTypes({ id, info, picture, title }: props) {
         <p className="text-2xl">{title}</p>
         <p className="mt-5">{info}</p>
       </div>
-      <Image src={picture} alt={`${picture}`} width={450} height={300} />
+      <Image src={picture} alt={`${picture}`} height={300} />
     </li>
   );
 }
