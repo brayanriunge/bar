@@ -21,12 +21,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.png" />
         {/* Inline style for the icon */}
-        <style jsx>{`
+        {/* <style jsx>{`
           link[rel="icon"] {
             width: 100px;
             height: 132px;
           }
-        `}</style>
+        `}</style> */}
       </Head>
       <Navbar />
       <Layout>
