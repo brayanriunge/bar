@@ -91,16 +91,15 @@ export default function Navbar() {
                 </button>
               </div>
               <div className="flex flex-col gap-10 justify-center items-center text-2xl  font-bold">
-                <Link href={"/"}>
-                  <a
-                    className={`${
-                      router.pathname === "/"
-                        ? "text-gray-600"
-                        : "text-orange-800"
-                    } hover:text-orange-500`}
-                  >
-                    Home
-                  </a>
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Home
                 </Link>
                 <Link
                   className={`${
