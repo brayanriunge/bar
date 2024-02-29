@@ -24,9 +24,9 @@ export default function Navbar() {
             <div className={`${flexStyles} w-full `}>
               <div className={`${flexStyles} md:gap-20`}>
                 <Link
-                  href={"/"}
+                  href={"/#home"}
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#home"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
@@ -66,7 +66,7 @@ export default function Navbar() {
                 <Link
                   href={"/"}
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#location"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
@@ -92,9 +92,9 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col gap-10 justify-center items-center text-2xl  font-bold">
                 <Link
-                  href={"/"}
+                  href={"/#home"}
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#home"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}

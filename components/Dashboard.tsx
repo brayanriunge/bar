@@ -9,7 +9,7 @@ import Head from "next/head";
 export default function Dashboard() {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
   return (
-    <section>
+    <section id="home">
       <div className="md:h-full w-full p-4">
         <div
           className="bg-cover mt-16 shadow-xl w-full bg-no-repeat rounded-xl bg-center bg-homeimage"
