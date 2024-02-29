@@ -36,7 +36,7 @@ export default function Navbar() {
                 <Link
                   href="/#menu"
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#menu"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
@@ -90,7 +90,7 @@ export default function Navbar() {
                   <HiOutlineX className="h-6 w-6" />
                 </button>
               </div>
-              <div className="flex flex-col gap-10 justify-center items-center text-2xl text-gray-600 font-bold">
+              <div className="flex flex-col gap-10 justify-center items-center text-2xl  font-bold">
                 <Link href={"/"}>
                   <a
                     className={`${
@@ -104,7 +104,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#menu"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
@@ -124,7 +124,7 @@ export default function Navbar() {
                 </Link>
                 <Link
                   className={`${
-                    router.pathname === "/"
+                    router.pathname === "/#contact"
                       ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
