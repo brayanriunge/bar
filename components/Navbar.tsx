@@ -63,6 +63,16 @@ export default function Navbar() {
                 >
                   Contact Us
                 </Link>
+                <Link
+                  href={"/"}
+                  className={`${
+                    router.pathname === "/#location"
+                      ? "text-gray-600"
+                      : "text-orange-800"
+                  } hover:text-orange-500`}
+                >
+                  Location
+                </Link>
               </div>
             </div>
           ) : (
