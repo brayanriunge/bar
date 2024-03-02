@@ -95,7 +95,7 @@ export default function Navbar() {
                   href={"/#home"}
                   className={`${
                     router.pathname === "/#home"
-                      ? "
+                      ? "text-gray-600"
                       : "text-orange-800"
                   } hover:text-orange-500`}
                 >
