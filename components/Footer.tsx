@@ -30,13 +30,13 @@ export default function Footer() {
         <div className="basis-1/4 md:mt-0 mt-16">
           <h4 className="font-bold text-lg">Contact Us</h4>
           <p className="flex gap-2 mt-4 items-baseline">
-            <FaInstagram /> Instagram: eMental
+            <FaInstagram /> Instagram: JamboLounge
           </p>
           <p className="flex gap-2  mt-4 items-baseline">
-            <FaTwitter /> Twitter: eMental
+            <FaTwitter /> Twitter: JamboLounge
           </p>
           <p className="flex gap-2  mt-4 items-baseline">
-            <AiOutlineMail /> Email: emental@gmail.com
+            <AiOutlineMail /> Email: JamboLounge@gmail.com
           </p>
           <p className="flex gap-2  mt-4 items-baseline">
             <AiFillPhone /> Phone: 0701842846
